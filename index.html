@@ -1,0 +1,142 @@
+<!doctype html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&family=Rubik+Lines&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-white text-black">
+
+  <div class="max-w-7xl mx-auto px-4 py-6">
+    <!-- Top Row - Search and FREE STYLE -->
+    <div class="relative flex items-center justify-between mb-8 px-4 h-20">
+      <!-- Left: Search Input -->
+      <div class="relative w-64">
+        <input 
+          type="text" 
+          placeholder="Search" 
+          class="w-full pl-10 pr-4 py-2 border-b border-gray-300 focus:outline-none focus:border-black placeholder-gray-400 text-sm"
+        />
+        <svg class="absolute left-3 top-2.5 h-5 w-5 text-gray-400" fill="none" 
+          stroke="currentColor" 
+          viewBox="0 0 24 24" 
+          xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+        </svg>
+      </div>
+    
+      <!-- Center: Logo -->
+      <div class="absolute left-1/2 transform -translate-x-1/2 text-center">
+        <h1 class="text-4xl font-['Montserrat'] tracking-widest">SLEK</h1>
+        <p class="text-sm font-['oswald'] text-gray-500">Luxury Footwear for Gentlemen</p>
+      </div>
+    
+    </div>
+    
+    
+  
+    <div class="relative w-full h-96 mb-8">
+      <!-- Background Image with Lower Opacity -->
+      <div class="absolute inset-0 bg-[url('./vv.jpg')] bg-cover bg-center bg-no-repeat opacity-30 z-0"></div>
+    
+      <!-- Content Layer -->
+      <div class="relative z-10 flex items-center justify-center h-full px-4 text-center">
+        <div class="max-w-3xl text-yellow-600 bg-opacity-60 p-6 rounded-md">
+          <h2 class="text-4xl md:text-5xl font-bold mb-4 font-['Poppins']">
+            Crafted for Modern Gentlemen
+          </h2>
+          <p class="text-lg md:text-xl font-['Poppins'] text-gray-900 tracking-wider font-semibold">
+            At SLEK, we merge elegance with edge to redefine luxury footwear. From formal gatherings to relaxed weekends,
+            every pair is designed with timeless craftsmanship and a touch of modern sophistication.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+  
+  </div>
+  
+<section class="py-12">
+  <h2 class="text-3xl font-semibold mb-12 text-center font-['Cinzel'] tracking-widest">Featured Collection</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+    
+    <!-- Product Card Template -->
+    <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+      <img 
+        src="exedt.jpg" 
+        alt="Exclusive Edits" 
+        class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+      >
+      <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent flex flex-col items-center justify-end text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-5">
+        <h3 class="font-semibold text-lg">Exclusive Edits</h3>
+        <a href="#" class="mt-2 text-sm tracking-wide border border-white px-4 py-1 rounded hover:bg-white hover:text-black transition">VIEW</a>
+      </div>
+    </div>
+
+    <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+      <img src="wkend.jpg" alt="Weekend Luxe" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent flex flex-col items-center justify-end text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-5">
+        <h3 class="font-semibold text-lg">Weekend Luxe</h3>
+        <a href="#" class="mt-2 text-sm tracking-wide border border-white px-4 py-1 rounded hover:bg-white hover:text-black transition">VIEW</a>
+      </div>
+    </div>
+
+    <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+      <img src="summer.jpg" alt="Summer Soles" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent flex flex-col items-center justify-end text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-5">
+        <h3 class="font-semibold text-lg">Summer Soles</h3>
+        <a href="#" class="mt-2 text-sm tracking-wide border border-white px-4 py-1 rounded hover:bg-white hover:text-black transition">VIEW</a>
+      </div>
+    </div>
+
+    <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+      <img src="mdcs.jpg" alt="Modern Classics" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent flex flex-col items-center justify-end text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-5">
+        <h3 class="font-semibold text-lg">Modern Classics</h3>
+        <a href="#" class="mt-2 text-sm tracking-wide border border-white px-4 py-1 rounded hover:bg-white hover:text-black transition">VIEW</a>
+      </div>
+    </div>
+
+    <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+      <img src="loafers.jpg" alt="Modern Classics" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent flex flex-col items-center justify-end text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-5">
+        <h3 class="font-semibold text-lg">Loafers</h3>
+        <a href="#" class="mt-2 text-sm tracking-wide border border-white px-4 py-1 rounded hover:bg-white hover:text-black transition">VIEW</a>
+      </div>
+    </div>
+
+    <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+      <img src="sn.jpg" alt="Modern Classics" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent flex flex-col items-center justify-end text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-5">
+        <h3 class="font-semibold text-lg">Sneakers</h3>
+        <a href="#" class="mt-2 text-sm tracking-wide border border-white px-4 py-1 rounded hover:bg-white hover:text-black transition">VIEW</a>
+      </div>
+    </div>
+
+    <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+      <img src="sandal.jpg" alt="Modern Classics" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent flex flex-col items-center justify-end text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-5">
+        <h3 class="font-semibold text-lg">Sandals</h3>
+        <a href="#" class="mt-2 text-sm tracking-wide border border-white px-4 py-1 rounded hover:bg-white hover:text-black transition">VIEW</a>
+      </div>
+    </div>
+
+    <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+      <img src="slek.jpg" alt="Modern Classics" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent flex flex-col items-center justify-end text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-5">
+        <h3 class="font-semibold text-lg">SLEK PRESTIGE</h3>
+        <a href="#" class="mt-2 text-sm tracking-wide border border-white px-4 py-1 rounded hover:bg-white hover:text-black transition">VIEW</a>
+      </div>
+    </div>
+
+    
+  </div>
+</section>
+</div>
+
+</body>
+</html>
