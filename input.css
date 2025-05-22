@@ -1,0 +1,28 @@
+@import "tailwindcss";
+*{
+    scroll-behavior: smooth;
+}
+.bg-indoor {
+    background-image: url('indoor.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .bg-outdoor {
+    background-image: url('outdoor.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .bg-workshop {
+    background-image: url('workshop.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .bg-lab {
+    background-image: url('lab.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
