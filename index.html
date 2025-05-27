@@ -39,7 +39,7 @@
               <a href="#" class=" hover:bg-gray-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Dashboard</a>
               <a href="#" class=" hover:bg-gray-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium">New Arrivals</a>
               <a href="#" class=" hover:bg-gray-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Best Sellers</a>
-              <a href="#" class=" hover:bg-gray-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Shop</a>
+              <a href="shop.html" class=" hover:bg-gray-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Shop</a>
             </div>
           </div>
         </div>
@@ -61,10 +61,10 @@
             </button>
   
             <!-- Dropdown menu -->
-            <div id="profile-menu" class="hidden absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-black py-1 shadow-lg ring-1 ring-black/5">
-              <a href="#" class="block px-4 py-2 text-sm text-gray-200">Your Profile</a>
-              <a href="#" class="block px-4 py-2 text-sm text-gray-200">Settings</a>
-              <a href="#" class="block px-4 py-2 text-sm text-gray-200">Sign out</a>
+            <div id="profile-menu" class="hidden absolute right-0 z-999 mt-2 w-48 origin-top-right rounded-md bg-black py-1 shadow-lg ring-1 ring-black/5">
+              <a href="#" class="block px-4 py-2 text-sm text-gray-200 hover:bg-yellow-600">Your Profile</a>
+              <a href="#" class="block px-4 py-2 text-sm text-gray-200 hover:bg-yellow-600">Settings</a>
+              <a href="#" class="block px-4 py-2 text-sm text-gray-200 hover:bg-yellow-600">Sign out</a>
             </div>
           </div>
         </div>
@@ -73,13 +73,15 @@
   
     <!-- Mobile Menu -->
     <div class="hidden sm:hidden" id="mobile-menu">
-      <div class="space-y-1 px-2 pt-2 pb-3">
-        <a href="#" class=" hover:bg-gray-900 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Dashboard</a>
-        <a href="#" class=" hover:bg-gray-900 hover:text-white block px-3 py-2 rounded-md text-base font-medium">New Arrivals</a>
-        <a href="#" class=" hover:bg-gray-900 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
-        <a href="#" class=" hover:bg-gray-900 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Shop</a>
+      <div class="space-y-1 px-2 pt-2 pb-3 bg-black">
+        <a href="index.html" class=" hover:bg-yellow-600 text-white hover:text-white block px-3 py-2 rounded-md text-base font-medium">Dashboard</a>
+        <a href="#" class=" hover:bg-yellow-600 text-white hover:text-white block px-3 py-2 rounded-md text-base font-medium">New Arrivals</a>
+        <a href="#" class=" hover:bg-yellow-600 text-white hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+        <a href="shop.html" class=" hover:bg-yellow-600 text-white hover:text-white block px-3 py-2 rounded-md text-base font-medium">Shop</a>
       </div>
     </div>
+
+
   </nav>
   
   <!-- JavaScript for toggle -->
@@ -115,7 +117,7 @@
     
     
   
-    <div class="relative w-full h-96 mb-8">
+    <div class="relative w-full h-96">
       <!-- Background Image with Lower Opacity -->
       <div class="absolute inset-0 bg-[url('./img/vv.jpg')] bg-cover bg-center bg-no-repeat opacity-30 z-0"></div>
     
@@ -136,7 +138,7 @@
   
   </div>
   
-<section class="py-12 mx-7">
+<section class="py-10 mx-7">
 
   
   <h2 class="text-3xl font-semibold mb-12 text-center font-['Cinzel'] tracking-widest">Featured Collection</h2>
@@ -182,7 +184,7 @@
       </div>
     </div>
     
-    <script>leLike(button) {
+    <script>toggleLike(button) {
         const icon = button.querySelector('.like-icon');
         icon.classList.toggle('fa-regular');
         icon.classList.toggle('fa-solid');
@@ -303,7 +305,7 @@
     <h3 class="font-semibold text-lg">Loafers</h3>
     <a href="shop.html" class="mt-2 text-sm tracking-wide border border-white px-4 py-1 rounded hover:bg-white hover:text-black transition">VIEW</a>
   </div>
-</div>
+</div> 
 
 <script>
   function toggleLike(button) {
@@ -331,7 +333,7 @@
   </button>
 
   <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent flex flex-col items-center justify-end text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-5">
-    <h3 class="font-semibold text-lg">Sneakers/h3>
+    <h3 class="font-semibold text-lg">Sneakers</h3>
     <a href="shop.html" class="mt-2 text-sm tracking-wide border border-white px-4 py-1 rounded hover:bg-white hover:text-black transition">VIEW</a>
   </div>
 </div>
@@ -408,7 +410,7 @@
         </p>
       </div>
       <div class="mt-4 flex items-center">
-        <input type="email" placeholder="Enter your e-mail" class="bg-gray-900 text-sm px-4 py-2 rounded-l focus:outline-none focus:ring-2 focus:ring-yellow-600 text-white placeholder-gray-400">
+        <input type="email" placeholder="Enter your e-mail" class="bg-gray-900 text-sm px-4 py-2 rounded-l focus:outline-none focus:ring-2 focus:ring-yellow-600  text-white placeholder-gray-400">
         <button class="bg-yellow-600 px-4 py-2 text-white rounded-r hover:bg-yellow-700 transition">Subscribe</button>
       </div>
     </div>
@@ -417,7 +419,7 @@
     <div>
       <h2 class="text-white text-lg font-semibold tracking-wider">Our Philosophy</h2>
       <div class="mt-4 space-y-4 text-sm font-light text-gray-400">
-        <p>“Elegance is not an option — it’s a lifestyle.” <br><span class="text-yellow-600 font-semibold">#SLEKSTYLE</span></p>
+        <p>“Elegance is not an option — it’s a lifestyle.”<span class="text-yellow-600 font-semibold">#SLEKSTYLE</span></p>
         <p>“Crafted with intention, worn with confidence.” <span class="text-yellow-600 font-semibold">#LuxuryWalks</span></p>
         <p>“Every step in SLEK tells a story of class.” <span class="text-yellow-600 font-semibold">#GentlemanChoice</span></p>
       </div>
