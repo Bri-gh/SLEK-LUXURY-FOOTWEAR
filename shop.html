@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SLEK Shop</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
   <link href="./output.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100 text-black">
@@ -73,8 +74,8 @@
       <div class="space-y-1 px-2 pt-2 pb-3 bg-black">
         <a href="index.html" class=" hover:bg-yellow-600 text-white hover:text-white block px-3 py-2 rounded-md text-base font-medium">Dashboard</a>
         <a href="arrivals.html" class=" hover:bg-yellow-600 text-white hover:text-white block px-3 py-2 rounded-md text-base font-medium">New Arrivals</a>
-        <a href="#" class=" hover:bg-yellow-600 text-white hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
         <a href="shop.html" class=" hover:bg-yellow-600 text-white hover:text-white block px-3 py-2 rounded-md text-base font-medium">Shop</a>
+        <a href="about.html" class=" hover:bg-yellow-600 text-white hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
       </div>
     </div>
 
@@ -108,898 +109,547 @@
       }
     });
   </script>
+
+
 <!-- Products Grid -->
 <section class="max-w-7xl mx-auto px-4 py-10">
     <h2 class="text-3xl font-semibold mb-10 text-center font-['Cinzel'] tracking-widest">All Products</h2>
   
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
   
-      <!-- Product Item -->
-      <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-        <img 
-          src="./img/exedt.jpg" 
-          alt="Exclusive Edits" 
-          class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
-        >  
-  
-        <!-- Like Button -->
-        <button 
-          onclick="toggleLike(this)"
-          class="absolute top-2 right-2 bg-white/80 hover:bg-white text-red-500 rounded-full p-2 transition"
-          aria-label="Like"
-        >
-          <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
-            <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 18.343l-6.828-6.829a4 4 0 010-5.656z"/>
-          </svg>
-        </button>
-  
-        <div class="p-4">
-          <h3 class="text-lg font-semibold">Exclusive Edits</h3>
-          <p class="text-xl font-bold text-yellow-600">₦38,000</p>
-          <button 
-            onclick="addToCart('Exclusive Edits', 38000)" 
-            class="mt-4 w-full px-4 py-2 bg-black text-white rounded hover:bg-yellow-600 transition"
-          >
-            Add to Cart
-          </button>
-        </div>
-      </div>
+     <!-- Product Item -->
+<div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300 bg-white">
+ 
+  <!-- Product Image -->
+  <img 
+    src="./img/exedt.jpg" 
+    alt="Exclusive Edits" 
+    class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+  >  
 
-      <!-- Product Item -->
-      <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-        <img 
-          src="./img/exedt.jpg" 
-          alt="Exclusive Edits" 
-          class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
-        >  
-  
-        <!-- Like Button -->
-        <button 
-          onclick="toggleLike(this)"
-          class="absolute top-2 right-2 bg-white/80 hover:bg-white text-red-500 rounded-full p-2 transition"
-          aria-label="Like"
-        >
-          <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
-            <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 18.343l-6.828-6.829a4 4 0 010-5.656z"/>
-          </svg>
-        </button>
-  
-        <div class="p-4">
-          <h3 class="text-lg font-semibold">Exclusive Edits</h3>
-          <p class="text-xl font-bold text-yellow-600">₦38,000</p>
-          <button 
-            onclick="addToCart('Exclusive Edits', 38000)" 
-            class="mt-4 w-full px-4 py-2 bg-black text-white rounded hover:bg-yellow-600 transition"
-          >
-            Add to Cart
-          </button>
-        </div>
-      </div>
+  <button 
+  onclick="addToCart('Exclusive Edits', 38000)"
+  class="absolute top-2 right-2 bg-transparent text-yellow-600 p-2"
+  aria-label="Add to Cart"
+  title="Add to Cart"
+>
+  <i class="fa-solid fa-cart-plus fa-bounce text-3xl" style="color: #ffd239;"></i>
+</button>
 
-      <!-- Product Item -->
-      <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-        <img 
-          src="./img/exedt.jpg" 
-          alt="Exclusive Edits" 
-          class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
-        >  
-  
-        <!-- Like Button -->
-        <button 
-          onclick="toggleLike(this)"
-          class="absolute top-2 right-2 bg-white/80 hover:bg-white text-red-500 rounded-full p-2 transition"
-          aria-label="Like"
-        >
-          <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
-            <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 18.343l-6.828-6.829a4 4 0 010-5.656z"/>
-          </svg>
-        </button>
-  
-        <div class="p-4">
-          <h3 class="text-lg font-semibold">Exclusive Edits</h3>
-          <p class="text-xl font-bold text-yellow-600">₦38,000</p>
-          <button 
-            onclick="addToCart('Exclusive Edits', 38000)" 
-            class="mt-4 w-full px-4 py-2 bg-black text-white rounded hover:bg-yellow-600 transition"
-          >
-            Add to Cart
-          </button>
-        </div>
-      </div>
+<!-- Popup Notification -->
+<div id="cart-popup"
+     class="fixed top-5 right-5 bg-yellow-500 text-white font-semibold px-4 py-3 rounded shadow-lg opacity-0 pointer-events-none transition-opacity duration-500 z-50">
+  🛒 "Exclusive Edits" added to cart!
+</div>
 
-      <!-- Product Item -->
-      <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-        <img 
-          src="./img/exedt.jpg" 
-          alt="Exclusive Edits" 
-          class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
-        >  
-  
-        <!-- Like Button -->
-        <button 
-          onclick="toggleLike(this)"
-          class="absolute top-2 right-2 bg-white/80 hover:bg-white text-red-500 rounded-full p-2 transition"
-          aria-label="Like"
-        >
-          <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
-            <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 18.343l-6.828-6.829a4 4 0 010-5.656z"/>
-          </svg>
-        </button>
-  
-        <div class="p-4">
-          <h3 class="text-lg font-semibold">Exclusive Edits</h3>
-          <p class="text-xl font-bold text-yellow-600">₦38,000</p>
-          <button 
-            onclick="addToCart('Exclusive Edits', 38000)" 
-            class="mt-4 w-full px-4 py-2 bg-black text-white rounded hover:bg-yellow-600 transition"
-          >
-            Add to Cart
-          </button>
-        </div>
-      </div>
+  <!-- Product Info -->
+  <div class="p-4">
+    <h3 class="text-lg font-semibold text-gray-800">Exclusive Edits</h3>
+    <p class="text-xl font-bold text-yellow-600">₦38,000</p>
+    <button 
+      onclick="buyNow('Exclusive Edits', 38000)" 
+      class="mt-4 w-[40%] px-3 py-2 bg-gray-200 text-yellow-600 rounded hover:bg-green-500 transition font-bold"
+    >
+      BUY
+    </button>
+  </div>
+</div>
 
-      <!-- Product Item -->
-      <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-        <img 
-          src="./img/exedt.jpg" 
-          alt="Exclusive Edits" 
-          class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
-        >  
-  
-        <!-- Like Button -->
-        <button 
-          onclick="toggleLike(this)"
-          class="absolute top-2 right-2 bg-white/80 hover:bg-white text-red-500 rounded-full p-2 transition"
-          aria-label="Like"
-        >
-          <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
-            <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 18.343l-6.828-6.829a4 4 0 010-5.656z"/>
-          </svg>
-        </button>
-  
-        <div class="p-4">
-          <h3 class="text-lg font-semibold">Exclusive Edits</h3>
-          <p class="text-xl font-bold text-yellow-600">₦38,000</p>
-          <button 
-            onclick="addToCart('Exclusive Edits', 38000)" 
-            class="mt-4 w-full px-4 py-2 bg-black text-white rounded hover:bg-yellow-600 transition"
-          >
-            Add to Cart
-          </button>
-        </div>
-      </div>
+       <!-- Product Item -->
+<div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300 bg-white">
+ 
+  <!-- Product Image -->
+  <img 
+    src="./img/exedt.jpg" 
+    alt="Exclusive Edits" 
+    class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+  >  
 
-      <!-- Product Item -->
-      <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-        <img 
-          src="./img/exedt.jpg" 
-          alt="Exclusive Edits" 
-          class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
-        >  
-  
-        <!-- Like Button -->
-        <button 
-          onclick="toggleLike(this)"
-          class="absolute top-2 right-2 bg-white/80 hover:bg-white text-red-500 rounded-full p-2 transition"
-          aria-label="Like"
-        >
-          <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
-            <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 18.343l-6.828-6.829a4 4 0 010-5.656z"/>
-          </svg>
-        </button>
-  
-        <div class="p-4">
-          <h3 class="text-lg font-semibold">Exclusive Edits</h3>
-          <p class="text-xl font-bold text-yellow-600">₦38,000</p>
-          <button 
-            onclick="addToCart('Exclusive Edits', 38000)" 
-            class="mt-4 w-full px-4 py-2 bg-black text-white rounded hover:bg-yellow-600 transition"
-          >
-            Add to Cart
-          </button>
-        </div>
-      </div>
+  <button 
+  onclick="addToCart('Exclusive Edits', 38000)"
+  class="absolute top-2 right-2 bg-transparent text-yellow-600 p-2"
+  aria-label="Add to Cart"
+  title="Add to Cart"
+>
+  <i class="fa-solid fa-cart-plus fa-bounce text-3xl" style="color: #ffd239;"></i>
+</button>
 
-      <!-- Product Item -->
-      <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-        <img 
-          src="./img/exedt.jpg" 
-          alt="Exclusive Edits" 
-          class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
-        >  
-  
-        <!-- Like Button -->
-        <button 
-          onclick="toggleLike(this)"
-          class="absolute top-2 right-2 bg-white/80 hover:bg-white text-red-500 rounded-full p-2 transition"
-          aria-label="Like"
-        >
-          <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
-            <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 18.343l-6.828-6.829a4 4 0 010-5.656z"/>
-          </svg>
-        </button>
-  
-        <div class="p-4">
-          <h3 class="text-lg font-semibold">Exclusive Edits</h3>
-          <p class="text-xl font-bold text-yellow-600">₦38,000</p>
-          <button 
-            onclick="addToCart('Exclusive Edits', 38000)" 
-            class="mt-4 w-full px-4 py-2 bg-black text-white rounded hover:bg-yellow-600 transition"
-          >
-            Add to Cart
-          </button>
-        </div>
-      </div>
+<!-- Popup Notification -->
+<div id="cart-popup"
+     class="fixed top-5 right-5 bg-yellow-500 text-white font-semibold px-4 py-3 rounded shadow-lg opacity-0 pointer-events-none transition-opacity duration-500 z-50">
+  🛒 "Exclusive Edits" added to cart!
+</div>
 
-      <!-- Product Item -->
-      <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-        <img 
-          src="./img/exedt.jpg" 
-          alt="Exclusive Edits" 
-          class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
-        >  
-  
-        <!-- Like Button -->
-        <button 
-          onclick="toggleLike(this)"
-          class="absolute top-2 right-2 bg-white/80 hover:bg-white text-red-500 rounded-full p-2 transition"
-          aria-label="Like"
-        >
-          <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
-            <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 18.343l-6.828-6.829a4 4 0 010-5.656z"/>
-          </svg>
-        </button>
-  
-        <div class="p-4">
-          <h3 class="text-lg font-semibold">Exclusive Edits</h3>
-          <p class="text-xl font-bold text-yellow-600">₦38,000</p>
-          <button 
-            onclick="addToCart('Exclusive Edits', 38000)" 
-            class="mt-4 w-full px-4 py-2 bg-black text-white rounded hover:bg-yellow-600 transition"
-          >
-            Add to Cart
-          </button>
-        </div>
-      </div>
+  <!-- Product Info -->
+  <div class="p-4">
+    <h3 class="text-lg font-semibold text-gray-800">Exclusive Edits</h3>
+    <p class="text-xl font-bold text-yellow-600">₦38,000</p>
+    <button 
+      onclick="buyNow('Exclusive Edits', 38000)" 
+      class="mt-4 w-[40%] px-4 py-2 bg-gray-200 text-yellow-600 rounded hover:bg-green-500 transition font-bold"
+    >
+      BUY
+    </button>
+  </div>
+</div>
 
-      <!-- Product Item -->
-      <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-        <img 
-          src="./img/exedt.jpg" 
-          alt="Exclusive Edits" 
-          class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
-        >  
-  
-        <!-- Like Button -->
-        <button 
-          onclick="toggleLike(this)"
-          class="absolute top-2 right-2 bg-white/80 hover:bg-white text-red-500 rounded-full p-2 transition"
-          aria-label="Like"
-        >
-          <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
-            <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 18.343l-6.828-6.829a4 4 0 010-5.656z"/>
-          </svg>
-        </button>
-  
-        <div class="p-4">
-          <h3 class="text-lg font-semibold">Exclusive Edits</h3>
-          <p class="text-xl font-bold text-yellow-600">₦38,000</p>
-          <button 
-            onclick="addToCart('Exclusive Edits', 38000)" 
-            class="mt-4 w-full px-4 py-2 bg-black text-white rounded hover:bg-yellow-600 transition"
-          >
-            Add to Cart
-          </button>
-        </div>
-      </div>
+ <!-- Product Item -->
+<div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300 bg-white">
+ 
+  <!-- Product Image -->
+  <img 
+    src="./img/exedt.jpg" 
+    alt="Exclusive Edits" 
+    class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+  >  
 
-      <!-- Product Item -->
-      <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-        <img 
-          src="./img/exedt.jpg" 
-          alt="Exclusive Edits" 
-          class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
-        >  
-  
-        <!-- Like Button -->
-        <button 
-          onclick="toggleLike(this)"
-          class="absolute top-2 right-2 bg-white/80 hover:bg-white text-red-500 rounded-full p-2 transition"
-          aria-label="Like"
-        >
-          <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
-            <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 18.343l-6.828-6.829a4 4 0 010-5.656z"/>
-          </svg>
-        </button>
-  
-        <div class="p-4">
-          <h3 class="text-lg font-semibold">Exclusive Edits</h3>
-          <p class="text-xl font-bold text-yellow-600">₦38,000</p>
-          <button 
-            onclick="addToCart('Exclusive Edits', 38000)" 
-            class="mt-4 w-full px-4 py-2 bg-black text-white rounded hover:bg-yellow-600 transition"
-          >
-            Add to Cart
-          </button>
-        </div>
-      </div>
+  <button 
+  onclick="addToCart('Exclusive Edits', 38000)"
+  class="absolute top-2 right-2 bg-transparent text-yellow-600 p-2"
+  aria-label="Add to Cart"
+  title="Add to Cart"
+>
+  <i class="fa-solid fa-cart-plus fa-bounce text-3xl" style="color: #ffd239;"></i>
+</button>
 
-      <!-- Product Item -->
-      <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-        <img 
-          src="./img/exedt.jpg" 
-          alt="Exclusive Edits" 
-          class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
-        >  
-  
-        <!-- Like Button -->
-        <button 
-          onclick="toggleLike(this)"
-          class="absolute top-2 right-2 bg-white/80 hover:bg-white text-red-500 rounded-full p-2 transition"
-          aria-label="Like"
-        >
-          <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
-            <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 18.343l-6.828-6.829a4 4 0 010-5.656z"/>
-          </svg>
-        </button>
-  
-        <div class="p-4">
-          <h3 class="text-lg font-semibold">Exclusive Edits</h3>
-          <p class="text-xl font-bold text-yellow-600">₦38,000</p>
-          <button 
-            onclick="addToCart('Exclusive Edits', 38000)" 
-            class="mt-4 w-full px-4 py-2 bg-black text-white rounded hover:bg-yellow-600 transition"
-          >
-            Add to Cart
-          </button>
-        </div>
-      </div>
+<!-- Popup Notification -->
+<div id="cart-popup"
+     class="fixed top-5 right-5 bg-yellow-500 text-white font-semibold px-4 py-3 rounded shadow-lg opacity-0 pointer-events-none transition-opacity duration-500 z-50">
+  🛒 "Exclusive Edits" added to cart!
+</div>
 
-      <!-- Product Item -->
-      <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-        <img 
-          src="./img/exedt.jpg" 
-          alt="Exclusive Edits" 
-          class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
-        >  
-  
-        <!-- Like Button -->
-        <button 
-          onclick="toggleLike(this)"
-          class="absolute top-2 right-2 bg-white/80 hover:bg-white text-red-500 rounded-full p-2 transition"
-          aria-label="Like"
-        >
-          <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
-            <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 18.343l-6.828-6.829a4 4 0 010-5.656z"/>
-          </svg>
-        </button>
-  
-        <div class="p-4">
-          <h3 class="text-lg font-semibold">Exclusive Edits</h3>
-          <p class="text-xl font-bold text-yellow-600">₦38,000</p>
-          <button 
-            onclick="addToCart('Exclusive Edits', 38000)" 
-            class="mt-4 w-full px-4 py-2 bg-black text-white rounded hover:bg-yellow-600 transition"
-          >
-            Add to Cart
-          </button>
-        </div>
-      </div>
+  <!-- Product Info -->
+  <div class="p-4">
+    <h3 class="text-lg font-semibold text-gray-800">Exclusive Edits</h3>
+    <p class="text-xl font-bold text-yellow-600">₦38,000</p>
+    <button 
+      onclick="buyNow('Exclusive Edits', 38000)" 
+      class="mt-4 w-[40%] px-4 py-2 bg-gray-200 text-yellow-600 rounded hover:bg-green-500 transition font-bold"
+    >
+      BUY
+    </button>
+  </div>
+</div>
 
-      <!-- Product Item -->
-      <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-        <img 
-          src="./img/exedt.jpg" 
-          alt="Exclusive Edits" 
-          class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
-        >  
-  
-        <!-- Like Button -->
-        <button 
-          onclick="toggleLike(this)"
-          class="absolute top-2 right-2 bg-white/80 hover:bg-white text-red-500 rounded-full p-2 transition"
-          aria-label="Like"
-        >
-          <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
-            <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 18.343l-6.828-6.829a4 4 0 010-5.656z"/>
-          </svg>
-        </button>
-  
-        <div class="p-4">
-          <h3 class="text-lg font-semibold">Exclusive Edits</h3>
-          <p class="text-xl font-bold text-yellow-600">₦38,000</p>
-          <button 
-            onclick="addToCart('Exclusive Edits', 38000)" 
-            class="mt-4 w-full px-4 py-2 bg-black text-white rounded hover:bg-yellow-600 transition"
-          >
-            Add to Cart
-          </button>
-        </div>
-      </div>
+ <!-- Product Item -->
+<div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300 bg-white">
+ 
+  <!-- Product Image -->
+  <img 
+    src="./img/exedt.jpg" 
+    alt="Exclusive Edits" 
+    class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+  >  
 
-      <!-- Product Item -->
-      <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-        <img 
-          src="./img/exedt.jpg" 
-          alt="Exclusive Edits" 
-          class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
-        >  
-  
-        <!-- Like Button -->
-        <button 
-          onclick="toggleLike(this)"
-          class="absolute top-2 right-2 bg-white/80 hover:bg-white text-red-500 rounded-full p-2 transition"
-          aria-label="Like"
-        >
-          <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
-            <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 18.343l-6.828-6.829a4 4 0 010-5.656z"/>
-          </svg>
-        </button>
-  
-        <div class="p-4">
-          <h3 class="text-lg font-semibold">Exclusive Edits</h3>
-          <p class="text-xl font-bold text-yellow-600">₦38,000</p>
-          <button 
-            onclick="addToCart('Exclusive Edits', 38000)" 
-            class="mt-4 w-full px-4 py-2 bg-black text-white rounded hover:bg-yellow-600 transition"
-          >
-            Add to Cart
-          </button>
-        </div>
-      </div>
+  <button 
+  onclick="addToCart('Exclusive Edits', 38000)"
+  class="absolute top-2 right-2 bg-transparent text-yellow-600 p-2"
+  aria-label="Add to Cart"
+  title="Add to Cart"
+>
+  <i class="fa-solid fa-cart-plus fa-bounce text-3xl" style="color: #ffd239;"></i>
+</button>
 
-      <!-- Product Item -->
-      <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-        <img 
-          src="./img/exedt.jpg" 
-          alt="Exclusive Edits" 
-          class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
-        >  
-  
-        <!-- Like Button -->
-        <button 
-          onclick="toggleLike(this)"
-          class="absolute top-2 right-2 bg-white/80 hover:bg-white text-red-500 rounded-full p-2 transition"
-          aria-label="Like"
-        >
-          <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
-            <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 18.343l-6.828-6.829a4 4 0 010-5.656z"/>
-          </svg>
-        </button>
-  
-        <div class="p-4">
-          <h3 class="text-lg font-semibold">Exclusive Edits</h3>
-          <p class="text-xl font-bold text-yellow-600">₦38,000</p>
-          <button 
-            onclick="addToCart('Exclusive Edits', 38000)" 
-            class="mt-4 w-full px-4 py-2 bg-black text-white rounded hover:bg-yellow-600 transition"
-          >
-            Add to Cart
-          </button>
-        </div>
-      </div>
+<!-- Popup Notification -->
+<div id="cart-popup"
+     class="fixed top-5 right-5 bg-yellow-500 text-white font-semibold px-4 py-3 rounded shadow-lg opacity-0 pointer-events-none transition-opacity duration-500 z-50">
+  🛒 "Exclusive Edits" added to cart!
+</div>
 
-      <!-- Product Item -->
-      <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-        <img 
-          src="./img/exedt.jpg" 
-          alt="Exclusive Edits" 
-          class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
-        >  
-  
-        <!-- Like Button -->
-        <button 
-          onclick="toggleLike(this)"
-          class="absolute top-2 right-2 bg-white/80 hover:bg-white text-red-500 rounded-full p-2 transition"
-          aria-label="Like"
-        >
-          <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
-            <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 18.343l-6.828-6.829a4 4 0 010-5.656z"/>
-          </svg>
-        </button>
-  
-        <div class="p-4">
-          <h3 class="text-lg font-semibold">Exclusive Edits</h3>
-          <p class="text-xl font-bold text-yellow-600">₦38,000</p>
-          <button 
-            onclick="addToCart('Exclusive Edits', 38000)" 
-            class="mt-4 w-full px-4 py-2 bg-black text-white rounded hover:bg-yellow-600 transition"
-          >
-            Add to Cart
-          </button>
-        </div>
-      </div>
-
-      <!-- Product Item -->
-      <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-        <img 
-          src="./img/exedt.jpg" 
-          alt="Exclusive Edits" 
-          class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
-        >  
-  
-        <!-- Like Button -->
-        <button 
-          onclick="toggleLike(this)"
-          class="absolute top-2 right-2 bg-white/80 hover:bg-white text-red-500 rounded-full p-2 transition"
-          aria-label="Like"
-        >
-          <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
-            <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 18.343l-6.828-6.829a4 4 0 010-5.656z"/>
-          </svg>
-        </button>
-  
-        <div class="p-4">
-          <h3 class="text-lg font-semibold">Exclusive Edits</h3>
-          <p class="text-xl font-bold text-yellow-600">₦38,000</p>
-          <button 
-            onclick="addToCart('Exclusive Edits', 38000)" 
-            class="mt-4 w-full px-4 py-2 bg-black text-white rounded hover:bg-yellow-600 transition"
-          >
-            Add to Cart
-          </button>
-        </div>
-      </div>
-
-      <!-- Product Item -->
-      <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-        <img 
-          src="./img/exedt.jpg" 
-          alt="Exclusive Edits" 
-          class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
-        >  
-  
-        <!-- Like Button -->
-        <button 
-          onclick="toggleLike(this)"
-          class="absolute top-2 right-2 bg-white/80 hover:bg-white text-red-500 rounded-full p-2 transition"
-          aria-label="Like"
-        >
-          <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
-            <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 18.343l-6.828-6.829a4 4 0 010-5.656z"/>
-          </svg>
-        </button>
-  
-        <div class="p-4">
-          <h3 class="text-lg font-semibold">Exclusive Edits</h3>
-          <p class="text-xl font-bold text-yellow-600">₦38,000</p>
-          <button 
-            onclick="addToCart('Exclusive Edits', 38000)" 
-            class="mt-4 w-full px-4 py-2 bg-black text-white rounded hover:bg-yellow-600 transition"
-          >
-            Add to Cart
-          </button>
-        </div>
-      </div>
+  <!-- Product Info -->
+  <div class="p-4">
+    <h3 class="text-lg font-semibold text-gray-800">Exclusive Edits</h3>
+    <p class="text-xl font-bold text-yellow-600">₦38,000</p>
+    <button 
+      onclick="buyNow('Exclusive Edits', 38000)" 
+      class="mt-4 w-[40%] px-4 py-2 bg-gray-200 text-yellow-600 rounded hover:bg-green-500 transition font-bold"
+    >
+      BUY
+    </button>
+  </div>
+</div>
 
 
-      <!-- Product Item -->
-      <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-        <img 
-          src="./img/exedt.jpg" 
-          alt="Exclusive Edits" 
-          class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
-        >  
-  
-        <!-- Like Button -->
-        <button 
-          onclick="toggleLike(this)"
-          class="absolute top-2 right-2 bg-white/80 hover:bg-white text-red-500 rounded-full p-2 transition"
-          aria-label="Like"
-        >
-          <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
-            <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 18.343l-6.828-6.829a4 4 0 010-5.656z"/>
-          </svg>
-        </button>
-  
-        <div class="p-4">
-          <h3 class="text-lg font-semibold">Exclusive Edits</h3>
-          <p class="text-xl font-bold text-yellow-600">₦38,000</p>
-          <button 
-            onclick="addToCart('Exclusive Edits', 38000)" 
-            class="mt-4 w-full px-4 py-2 bg-black text-white rounded hover:bg-yellow-600 transition"
-          >
-            Add to Cart
-          </button>
-        </div>
-      </div>
+ <!-- Product Item -->
+<div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300 bg-white">
+ 
+  <!-- Product Image -->
+  <img 
+    src="./img/exedt.jpg" 
+    alt="Exclusive Edits" 
+    class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+  >  
+
+  <button 
+  onclick="addToCart('Exclusive Edits', 38000)"
+  class="absolute top-2 right-2 bg-transparent text-yellow-600 p-2"
+  aria-label="Add to Cart"
+  title="Add to Cart"
+>
+  <i class="fa-solid fa-cart-plus fa-bounce text-3xl" style="color: #ffd239;"></i>
+</button>
+
+<!-- Popup Notification -->
+<div id="cart-popup"
+     class="fixed top-5 right-5 bg-yellow-500 text-white font-semibold px-4 py-3 rounded shadow-lg opacity-0 pointer-events-none transition-opacity duration-500 z-50">
+  🛒 "Exclusive Edits" added to cart!
+</div>
+
+  <!-- Product Info -->
+  <div class="p-4">
+    <h3 class="text-lg font-semibold text-gray-800">Exclusive Edits</h3>
+    <p class="text-xl font-bold text-yellow-600">₦38,000</p>
+    <button 
+      onclick="buyNow('Exclusive Edits', 38000)" 
+      class="mt-4 w-[40%] px-4 py-2 bg-gray-200 text-yellow-600 rounded hover:bg-green-500 transition font-bold"
+    >
+      BUY
+    </button>
+  </div>
+</div>
+
+ <!-- Product Item -->
+<div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300 bg-white">
+ 
+  <!-- Product Image -->
+  <img 
+    src="./img/exedt.jpg" 
+    alt="Exclusive Edits" 
+    class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+  >  
+
+  <button 
+  onclick="addToCart('Exclusive Edits', 38000)"
+  class="absolute top-2 right-2 bg-transparent text-yellow-600 p-2"
+  aria-label="Add to Cart"
+  title="Add to Cart"
+>
+  <i class="fa-solid fa-cart-plus fa-bounce text-3xl" style="color: #ffd239;"></i>
+</button>
+
+<!-- Popup Notification -->
+<div id="cart-popup"
+     class="fixed top-5 right-5 bg-yellow-500 text-white font-semibold px-4 py-3 rounded shadow-lg opacity-0 pointer-events-none transition-opacity duration-500 z-50">
+  🛒 "Exclusive Edits" added to cart!
+</div>
+
+  <!-- Product Info -->
+  <div class="p-4">
+    <h3 class="text-lg font-semibold text-gray-800">Exclusive Edits</h3>
+    <p class="text-xl font-bold text-yellow-600">₦38,000</p>
+    <button 
+      onclick="buyNow('Exclusive Edits', 38000)" 
+      class="mt-4 w-[40%] px-4 py-2 bg-gray-200 text-yellow-600 rounded hover:bg-green-500 transition font-bold"
+    >
+      BUY
+    </button>
+  </div>
+</div>
 
 
-      <!-- Product Item -->
-      <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-        <img 
-          src="./img/exedt.jpg" 
-          alt="Exclusive Edits" 
-          class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
-        >  
-  
-        <!-- Like Button -->
-        <button 
-          onclick="toggleLike(this)"
-          class="absolute top-2 right-2 bg-white/80 hover:bg-white text-red-500 rounded-full p-2 transition"
-          aria-label="Like"
-        >
-          <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
-            <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 18.343l-6.828-6.829a4 4 0 010-5.656z"/>
-          </svg>
-        </button>
-  
-        <div class="p-4">
-          <h3 class="text-lg font-semibold">Exclusive Edits</h3>
-          <p class="text-xl font-bold text-yellow-600">₦38,000</p>
-          <button 
-            onclick="addToCart('Exclusive Edits', 38000)" 
-            class="mt-4 w-full px-4 py-2 bg-black text-white rounded hover:bg-yellow-600 transition"
-          >
-            Add to Cart
-          </button>
-        </div>
-      </div>
+ <!-- Product Item -->
+<div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300 bg-white">
+ 
+  <!-- Product Image -->
+  <img 
+    src="./img/exedt.jpg" 
+    alt="Exclusive Edits" 
+    class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+  >  
 
-      <!-- Product Item -->
-      <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-        <img 
-          src="./img/exedt.jpg" 
-          alt="Exclusive Edits" 
-          class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
-        >  
-  
-        <!-- Like Button -->
-        <button 
-          onclick="toggleLike(this)"
-          class="absolute top-2 right-2 bg-white/80 hover:bg-white text-red-500 rounded-full p-2 transition"
-          aria-label="Like"
-        >
-          <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
-            <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 18.343l-6.828-6.829a4 4 0 010-5.656z"/>
-          </svg>
-        </button>
-  
-        <div class="p-4">
-          <h3 class="text-lg font-semibold">Exclusive Edits</h3>
-          <p class="text-xl font-bold text-yellow-600">₦38,000</p>
-          <button 
-            onclick="addToCart('Exclusive Edits', 38000)" 
-            class="mt-4 w-full px-4 py-2 bg-black text-white rounded hover:bg-yellow-600 transition"
-          >
-            Add to Cart
-          </button>
-        </div>
-      </div>
+  <button 
+  onclick="addToCart('Exclusive Edits', 38000)"
+  class="absolute top-2 right-2 bg-transparent text-yellow-600 p-2"
+  aria-label="Add to Cart"
+  title="Add to Cart"
+>
+  <i class="fa-solid fa-cart-plus fa-bounce text-3xl" style="color: #ffd239;"></i>
+</button>
 
-      <!-- Product Item -->
-      <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-        <img 
-          src="./img/exedt.jpg" 
-          alt="Exclusive Edits" 
-          class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
-        >  
-  
-        <!-- Like Button -->
-        <button 
-          onclick="toggleLike(this)"
-          class="absolute top-2 right-2 bg-white/80 hover:bg-white text-red-500 rounded-full p-2 transition"
-          aria-label="Like"
-        >
-          <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
-            <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 18.343l-6.828-6.829a4 4 0 010-5.656z"/>
-          </svg>
-        </button>
-  
-        <div class="p-4">
-          <h3 class="text-lg font-semibold">Exclusive Edits</h3>
-          <p class="text-xl font-bold text-yellow-600">₦38,000</p>
-          <button 
-            onclick="addToCart('Exclusive Edits', 38000)" 
-            class="mt-4 w-full px-4 py-2 bg-black text-white rounded hover:bg-yellow-600 transition"
-          >
-            Add to Cart
-          </button>
-        </div>
-      </div>
+<!-- Popup Notification -->
+<div id="cart-popup"
+     class="fixed top-5 right-5 bg-yellow-500 text-white font-semibold px-4 py-3 rounded shadow-lg opacity-0 pointer-events-none transition-opacity duration-500 z-50">
+  🛒 "Exclusive Edits" added to cart!
+</div>
 
-      <!-- Product Item -->
-      <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-        <img 
-          src="./img/exedt.jpg" 
-          alt="Exclusive Edits" 
-          class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
-        >  
-  
-        <!-- Like Button -->
-        <button 
-          onclick="toggleLike(this)"
-          class="absolute top-2 right-2 bg-white/80 hover:bg-white text-red-500 rounded-full p-2 transition"
-          aria-label="Like"
-        >
-          <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
-            <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 18.343l-6.828-6.829a4 4 0 010-5.656z"/>
-          </svg>
-        </button>
-  
-        <div class="p-4">
-          <h3 class="text-lg font-semibold">Exclusive Edits</h3>
-          <p class="text-xl font-bold text-yellow-600">₦38,000</p>
-          <button 
-            onclick="addToCart('Exclusive Edits', 38000)" 
-            class="mt-4 w-full px-4 py-2 bg-black text-white rounded hover:bg-yellow-600 transition"
-          >
-            Add to Cart
-          </button>
-        </div>
-      </div>
-
-      <!-- Product Item -->
-      <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-        <img 
-          src="./img/exedt.jpg" 
-          alt="Exclusive Edits" 
-          class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
-        >  
-  
-        <!-- Like Button -->
-        <button 
-          onclick="toggleLike(this)"
-          class="absolute top-2 right-2 bg-white/80 hover:bg-white text-red-500 rounded-full p-2 transition"
-          aria-label="Like"
-        >
-          <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
-            <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 18.343l-6.828-6.829a4 4 0 010-5.656z"/>
-          </svg>
-        </button>
-  
-        <div class="p-4">
-          <h3 class="text-lg font-semibold">Exclusive Edits</h3>
-          <p class="text-xl font-bold text-yellow-600">₦38,000</p>
-          <button 
-            onclick="addToCart('Exclusive Edits', 38000)" 
-            class="mt-4 w-full px-4 py-2 bg-black text-white rounded hover:bg-yellow-600 transition"
-          >
-            Add to Cart
-          </button>
-        </div>
-      </div>
-
-      <!-- Product Item -->
-      <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-        <img 
-          src="./img/exedt.jpg" 
-          alt="Exclusive Edits" 
-          class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
-        >  
-  
-        <!-- Like Button -->
-        <button 
-          onclick="toggleLike(this)"
-          class="absolute top-2 right-2 bg-white/80 hover:bg-white text-red-500 rounded-full p-2 transition"
-          aria-label="Like"
-        >
-          <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
-            <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 18.343l-6.828-6.829a4 4 0 010-5.656z"/>
-          </svg>
-        </button>
-  
-        <div class="p-4">
-          <h3 class="text-lg font-semibold">Exclusive Edits</h3>
-          <p class="text-xl font-bold text-yellow-600">₦38,000</p>
-          <button 
-            onclick="addToCart('Exclusive Edits', 38000)" 
-            class="mt-4 w-full px-4 py-2 bg-black text-white rounded hover:bg-yellow-600 transition"
-          >
-            Add to Cart
-          </button>
-        </div>
-      </div>
+  <!-- Product Info -->
+  <div class="p-4">
+    <h3 class="text-lg font-semibold text-gray-800">Exclusive Edits</h3>
+    <p class="text-xl font-bold text-yellow-600">₦38,000</p>
+    <button 
+      onclick="buyNow('Exclusive Edits', 38000)" 
+      class="mt-4 w-[40%] px-4 py-2 bg-gray-200 text-yellow-600 rounded hover:bg-green-500 transition font-bold"
+    >
+      BUY
+    </button>
+  </div>
+</div>
 
 
-      <!-- Product Item -->
-      <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-        <img 
-          src="./img/exedt.jpg" 
-          alt="Exclusive Edits" 
-          class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
-        >  
-  
-        <!-- Like Button -->
-        <button 
-          onclick="toggleLike(this)"
-          class="absolute top-2 right-2 bg-white/80 hover:bg-white text-red-500 rounded-full p-2 transition"
-          aria-label="Like"
-        >
-          <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
-            <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 18.343l-6.828-6.829a4 4 0 010-5.656z"/>
-          </svg>
-        </button>
-  
-        <div class="p-4">
-          <h3 class="text-lg font-semibold">Exclusive Edits</h3>
-          <p class="text-xl font-bold text-yellow-600">₦38,000</p>
-          <button 
-            onclick="addToCart('Exclusive Edits', 38000)" 
-            class="mt-4 w-full px-4 py-2 bg-black text-white rounded hover:bg-yellow-600 transition"
-          >
-            Add to Cart
-          </button>
-        </div>
-      </div>
+ <!-- Product Item -->
+<div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300 bg-white">
+ 
+  <!-- Product Image -->
+  <img 
+    src="./img/exedt.jpg" 
+    alt="Exclusive Edits" 
+    class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+  >  
 
-      <!-- Product Item -->
-      <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-        <img 
-          src="./img/exedt.jpg" 
-          alt="Exclusive Edits" 
-          class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
-        >  
-  
-        <!-- Like Button -->
-        <button 
-          onclick="toggleLike(this)"
-          class="absolute top-2 right-2 bg-white/80 hover:bg-white text-red-500 rounded-full p-2 transition"
-          aria-label="Like"
-        >
-          <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
-            <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 18.343l-6.828-6.829a4 4 0 010-5.656z"/>
-          </svg>
-        </button>
-  
-        <div class="p-4">
-          <h3 class="text-lg font-semibold">Exclusive Edits</h3>
-          <p class="text-xl font-bold text-yellow-600">₦38,000</p>
-          <button 
-            onclick="addToCart('Exclusive Edits', 38000)" 
-            class="mt-4 w-full px-4 py-2 bg-black text-white rounded hover:bg-yellow-600 transition"
-          >
-            Add to Cart
-          </button>
-        </div>
-      </div>
+  <button 
+  onclick="addToCart('Exclusive Edits', 38000)"
+  class="absolute top-2 right-2 bg-transparent text-yellow-600 p-2"
+  aria-label="Add to Cart"
+  title="Add to Cart"
+>
+  <i class="fa-solid fa-cart-plus fa-bounce text-3xl" style="color: #ffd239;"></i>
+</button>
 
-      <!-- Product Item -->
-      <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-        <img 
-          src="./img/exedt.jpg" 
-          alt="Exclusive Edits" 
-          class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
-        >  
-  
-        <!-- Like Button -->
-        <button 
-          onclick="toggleLike(this)"
-          class="absolute top-2 right-2 bg-white/80 hover:bg-white text-red-500 rounded-full p-2 transition"
-          aria-label="Like"
-        >
-          <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
-            <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 18.343l-6.828-6.829a4 4 0 010-5.656z"/>
-          </svg>
-        </button>
-  
-        <div class="p-4">
-          <h3 class="text-lg font-semibold">Exclusive Edits</h3>
-          <p class="text-xl font-bold text-yellow-600">₦38,000</p>
-          <button 
-            onclick="addToCart('Exclusive Edits', 38000)" 
-            class="mt-4 w-full px-4 py-2 bg-black text-white rounded hover:bg-yellow-600 transition"
-          >
-            Add to Cart
-          </button>
-        </div>
-      </div>
-  
+<!-- Popup Notification -->
+<div id="cart-popup"
+     class="fixed top-5 right-5 bg-yellow-500 text-white font-semibold px-4 py-3 rounded shadow-lg opacity-0 pointer-events-none transition-opacity duration-500 z-50">
+  🛒 "Exclusive Edits" added to cart!
+</div>
+
+  <!-- Product Info -->
+  <div class="p-4">
+    <h3 class="text-lg font-semibold text-gray-800">Exclusive Edits</h3>
+    <p class="text-xl font-bold text-yellow-600">₦38,000</p>
+    <button 
+      onclick="buyNow('Exclusive Edits', 38000)" 
+      class="mt-4 w-[40%] px-4 py-2 bg-gray-200 text-yellow-600 rounded hover:bg-green-500 transition font-bold"
+    >
+      BUY
+    </button>
+  </div>
+</div>
+
+ <!-- Product Item -->
+<div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300 bg-white">
+ 
+  <!-- Product Image -->
+  <img 
+    src="./img/exedt.jpg" 
+    alt="Exclusive Edits" 
+    class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+  >  
+
+  <button 
+  onclick="addToCart('Exclusive Edits', 38000)"
+  class="absolute top-2 right-2 bg-transparent text-yellow-600 p-2"
+  aria-label="Add to Cart"
+  title="Add to Cart"
+>
+  <i class="fa-solid fa-cart-plus fa-bounce text-3xl" style="color: #ffd239;"></i>
+</button>
+
+<!-- Popup Notification -->
+<div id="cart-popup"
+     class="fixed top-5 right-5 bg-yellow-500 text-white font-semibold px-4 py-3 rounded shadow-lg opacity-0 pointer-events-none transition-opacity duration-500 z-50">
+  🛒 "Exclusive Edits" added to cart!
+</div>
+
+  <!-- Product Info -->
+  <div class="p-4">
+    <h3 class="text-lg font-semibold text-gray-800">Exclusive Edits</h3>
+    <p class="text-xl font-bold text-yellow-600">₦38,000</p>
+    <button 
+      onclick="buyNow('Exclusive Edits', 38000)" 
+      class="mt-4 w-[40%] px-4 py-2 bg-gray-200 text-yellow-600 rounded hover:bg-green-500 transition font-bold"
+    >
+      BUY
+    </button>
+  </div>
+</div>
+
+ <!-- Product Item -->
+<div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300 bg-white">
+ 
+  <!-- Product Image -->
+  <img 
+    src="./img/exedt.jpg" 
+    alt="Exclusive Edits" 
+    class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+  >  
+
+  <button 
+  onclick="addToCart('Exclusive Edits', 38000)"
+  class="absolute top-2 right-2 bg-transparent text-yellow-600 p-2"
+  aria-label="Add to Cart"
+  title="Add to Cart"
+>
+  <i class="fa-solid fa-cart-plus fa-bounce text-3xl" style="color: #ffd239;"></i>
+</button>
+
+<!-- Popup Notification -->
+<div id="cart-popup"
+     class="fixed top-5 right-5 bg-yellow-500 text-white font-semibold px-4 py-3 rounded shadow-lg opacity-0 pointer-events-none transition-opacity duration-500 z-50">
+  🛒 "Exclusive Edits" added to cart!
+</div>
+
+  <!-- Product Info -->
+  <div class="p-4">
+    <h3 class="text-lg font-semibold text-gray-800">Exclusive Edits</h3>
+    <p class="text-xl font-bold text-yellow-600">₦38,000</p>
+    <button 
+      onclick="buyNow('Exclusive Edits', 38000)" 
+      class="mt-4 w-[40%] px-4 py-2 bg-gray-200 text-yellow-600 rounded hover:bg-green-500 transition font-bold"
+    >
+      BUY
+    </button>
+  </div>
+</div>
+
+ <!-- Product Item -->
+<div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300 bg-white">
+ 
+  <!-- Product Image -->
+  <img 
+    src="./img/exedt.jpg" 
+    alt="Exclusive Edits" 
+    class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+  >  
+
+  <button 
+  onclick="addToCart('Exclusive Edits', 38000)"
+  class="absolute top-2 right-2 bg-transparent text-yellow-600 p-2"
+  aria-label="Add to Cart"
+  title="Add to Cart"
+>
+  <i class="fa-solid fa-cart-plus fa-bounce text-3xl" style="color: #ffd239;"></i>
+</button>
+
+<!-- Popup Notification -->
+<div id="cart-popup"
+     class="fixed top-5 right-5 bg-yellow-500 text-white font-semibold px-4 py-3 rounded shadow-lg opacity-0 pointer-events-none transition-opacity duration-500 z-50">
+  🛒 "Exclusive Edits" added to cart!
+</div>
+
+  <!-- Product Info -->
+  <div class="p-4">
+    <h3 class="text-lg font-semibold text-gray-800">Exclusive Edits</h3>
+    <p class="text-xl font-bold text-yellow-600">₦38,000</p>
+    <button 
+      onclick="buyNow('Exclusive Edits', 38000)" 
+      class="mt-4 w-[40%] px-4 py-2 bg-gray-200 text-yellow-600 rounded hover:bg-green-500 transition font-bold"
+    >
+      BUY
+    </button>
+  </div>
+</div>
+
+ <!-- Product Item -->
+<div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300 bg-white">
+ 
+  <!-- Product Image -->
+  <img 
+    src="./img/exedt.jpg" 
+    alt="Exclusive Edits" 
+    class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+  >  
+
+  <button 
+  onclick="addToCart('Exclusive Edits', 38000)"
+  class="absolute top-2 right-2 bg-transparent text-yellow-600 p-2"
+  aria-label="Add to Cart"
+  title="Add to Cart"
+>
+  <i class="fa-solid fa-cart-plus fa-bounce text-3xl" style="color: #ffd239;"></i>
+</button>
+
+<!-- Popup Notification -->
+<div id="cart-popup"
+     class="fixed top-5 right-5 bg-yellow-500 text-white font-semibold px-4 py-3 rounded shadow-lg opacity-0 pointer-events-none transition-opacity duration-500 z-50">
+  🛒 "Exclusive Edits" added to cart!
+</div>
+
+  <!-- Product Info -->
+  <div class="p-4">
+    <h3 class="text-lg font-semibold text-gray-800">Exclusive Edits</h3>
+    <p class="text-xl font-bold text-yellow-600">₦38,000</p>
+    <button 
+      onclick="buyNow('Exclusive Edits', 38000)" 
+      class="mt-4 w-[40%] px-4 py-2 bg-gray-200 text-yellow-600 rounded hover:bg-green-500 transition font-bold"
+    >
+      BUY
+    </button>
+  </div>
+</div>
+
+</section>
+
+<!-- Script -->
+<script>
+  function addToCart(productName, price) {
+    // Your actual cart logic goes here...
+
+    // Show the popup
+    const popup = document.getElementById('cart-popup');
+    popup.textContent = `🛒 "${productName}" added to cart!`;
+    popup.classList.remove('opacity-0', 'pointer-events-none');
+    popup.classList.add('opacity-100');
+
+    // Hide after 2 seconds
+    setTimeout(() => {
+      popup.classList.remove('opacity-100');
+      popup.classList.add('opacity-0', 'pointer-events-none');
+    }, 2000);
+  }
+</script>
+
+
+
+<footer class="bg-gray-900 text-gray-300 pt-12 pb-6">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+
+    <!-- Brand Info -->
+    <div>
+      <h2 class="text-2xl font-bold text-yellow-500 mb-2">SLEK</h2>
+      <p class="text-sm text-gray-400">Luxury redefined. Handcrafted footwear that speaks elegance in every step.</p>
     </div>
-  </section>
-  
-  <!-- JavaScript -->
-  <script>
-    function toggleLike(btn) {
-      btn.classList.toggle('text-red-500');
-      btn.classList.toggle('text-gray-400');
-    }
-  
-    function addToCart(productName, price) {
-      console.log(`Added to cart: ${productName} for ₦${price.toLocaleString()}`);
-      alert(`${productName} added to cart!`);
-    }
-  </script>
-     
+
+    <!-- Quick Links -->
+    <div>
+      <h3 class="text-lg font-semibold text-white mb-3">Quick Links</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="index.html" class="hover:text-yellow-500">Home</a></li>
+        <li><a href="about.html" class="hover:text-yellow-500">About Us</a></li>
+        <li><a href="shop.html" class="hover:text-yellow-500">Shop</a></li>
+        <li><a href="#blog" class="hover:text-yellow-500">Blog</a></li>
+        <li><a href="contact.html" class="hover:text-yellow-500">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div>
+      <h3 class="text-lg font-semibold text-white mb-3">Contact</h3>
+      <ul class="space-y-2 text-sm">
+        <li>Email: <a href="mailto:support@slek.com" class="hover:text-yellow-500">support@slek.com</a></li>
+        <li>Phone: <a href="tel:+2348000000000" class="hover:text-yellow-500">+234 906 4178 956</a></li>
+        <li>Ogun, Nigeria</li>
+      </ul>
+    </div>
+
+    <!-- Social Media -->
+    <div>
+      <h3 class="text-lg font-semibold text-white mb-3">Follow Us</h3>
+      <div class="flex space-x-4">
+        <a href="#" class="hover:text-yellow-500 transition">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22 5.75c-.77.35-1.6.59-2.47.7a4.19 4.19 0 0 0 1.83-2.3 8.27 8.27 0 0 1-2.65 1.02A4.13 4.13 0 0 0 16.5 4c-2.27 0-4.1 1.84-4.1 4.1 0 .32.03.63.1.93C8.35 8.9 5.6 7.38 3.8 5.06a4.1 4.1 0 0 0-.56 2.06c0 1.42.72 2.67 1.83 3.4a4.12 4.12 0 0 1-1.86-.52v.05c0 1.98 1.41 3.63 3.28 4a4.1 4.1 0 0 1-1.85.07 4.13 4.13 0 0 0 3.85 2.86A8.3 8.3 0 0 1 2 18.58a11.74 11.74 0 0 0 6.29 1.84c7.55 0 11.68-6.26 11.68-11.68 0-.18 0-.36-.01-.54A8.36 8.36 0 0 0 22 5.75z"/></svg>
+        </a>
+        <a href="#" class="hover:text-yellow-500 transition">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22 2.2H2C.9 2.2 0 3.1 0 4.2v15.6c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2V4.2c0-1.1-.9-2-2-2zM8.5 17.4H5.8V9h2.7v8.4zM7.2 7.8C6.2 7.8 5.4 7 5.4 6c0-1 .8-1.8 1.8-1.8 1 0 1.8.8 1.8 1.8 0 1-.8 1.8-1.8 1.8zM19.2 17.4h-2.7v-4c0-1-.4-1.7-1.4-1.7s-1.5.7-1.5 1.7v4h-2.7V9h2.6v1.2c.3-.5 1-1.2 2.1-1.2 1.5 0 2.6 1 2.6 3v5.4z"/></svg>
+        </a>
+        <!-- Add more icons as needed -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="mt-10 border-t border-gray-700 pt-4 text-center text-sm text-gray-500">
+    © 2025 <span class="text-yellow-500 font-semibold">SLEK</span> Footwear. All rights reserved.
+  </div>
+</footer>
+
 </body>
 </html>

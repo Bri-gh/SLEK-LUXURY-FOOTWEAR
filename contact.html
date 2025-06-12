@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | SLEK Footwear</title>
+  <link rel="stylesheet" href="output.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet"/>
+  <style>
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 100;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+    
+
+  <!-- Hero Section -->
+  <section class="bg-gray-900 text-white py-20 text-center px-4">
+    <h1 class="text-4xl font-bold text-yellow-500 mb-3">Get in Touch</h1>
+    <p class="text-lg max-w-2xl mx-auto">Have a question or custom order? SLEK is ready to hear from you.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-10">
+    <!-- Contact Form -->
+    <div class="bg-gray-100 p-8 rounded-2xl shadow-md">
+      <h2 class="text-2xl font-bold mb-6 text-yellow-600">Send Us a Message</h2>
+      <form action="#" method="POST" class="space-y-5">
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+          <input type="text" name="name" required class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-500"/>
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+          <input type="email" name="email" required class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-500"/>
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+          <textarea name="message" rows="5" required class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-500"></textarea>
+        </div>
+        <button type="submit" class="bg-yellow-600 text-white font-semibold px-6 py-3 rounded-md hover:bg-yellow-700 transition">Send Message</button>
+      </form>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="space-y-8">
+      <div>
+        <h3 class="text-xl font-semibold text-yellow-600 mb-2">Contact Info</h3>
+        <p><strong>Email:</strong> support@slek.com</p>
+        <p><strong>Phone:</strong> +2349064178956</p>
+        <p><strong>Address:</strong> Sango, Ogun State, Nigeria</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold text-yellow-600 mb-2">Business Hours</h3>
+        <p>Monday - Friday: 9AM - 6PM</p>
+        <p>Saturday: 10AM - 3PM</p>
+        <p>Sunday: Closed</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold text-yellow-600 mb-2">Follow Us</h3>
+        <div class="flex space-x-4 text-yellow-600">
+          <a href="#">Instagram</a>
+          <a href="#">Twitter</a>
+          <a href="#">Facebook</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google Map Embed -->
+  <section class="px-4 pb-16">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-2xl font-bold text-yellow-600 mb-4">Our Location</h2>
+      <div class="w-full h-64 rounded-xl overflow-hidden shadow">
+        <iframe class="w-full h-full"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.3681038706423!2d3.2022984147577734!3d6.684787395168451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bbfe3c59e9f61%3A0xb5128cf0d2e18f4a!2sSango%20Ota%2C%20Ogun%20State%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1718200000000"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/2349064178956" target="_blank" class="whatsapp-float">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" class="w-12 h-12 hover:scale-110 transition"/>
+  </a>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 pt-12 pb-6">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div>
+        <h2 class="text-2xl font-bold text-yellow-500 mb-2">SLEK</h2>
+        <p class="text-sm text-gray-400">Luxury redefined. Handcrafted footwear that speaks elegance in every step.</p>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-white mb-3">Quick Links</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="index.html" class="hover:text-yellow-500">Home</a></li>
+          <li><a href="about.html" class="hover:text-yellow-500">About Us</a></li>
+          <li><a href="shop.html" class="hover:text-yellow-500">Shop</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-white mb-3">Support</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="contact.html" class="hover:text-yellow-500">Contact</a></li>
+          <li><a href="#" class="hover:text-yellow-500">FAQs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-white mb-3">Follow Us</h3>
+        <div class="flex space-x-4">
+          <a href="#" class="hover:text-yellow-500">Instagram</a>
+          <a href="#" class="hover:text-yellow-500">Twitter</a>
+        </div>
+      </div>
+    </div>
+    <div class="mt-10 border-t border-gray-700 pt-4 text-center text-sm text-gray-500">
+      © 2025 <span class="text-yellow-500 font-semibold">SLEK</span> Footwear. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
